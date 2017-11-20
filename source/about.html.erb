@@ -1,24 +1,37 @@
 ---
 title: Le Wagon - Middleman - About
 ---
+ <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<div id="about">
+    <div id="about">
   <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
     <ul class="list-inline">
-      <% data.users.each do |user| %>
         <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
-          <% end %>
-          <h2><%= user.name %></h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle" alt="Ssaunier" />
+          <h2>Sébastien Saunier</h2>
           <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fa fa-github"></i> <%= user.github_nickname %>
-            <% end %>
-          </p>
+<a href="http://github.com/ssaunier">              <i class="fa fa-github"></i> ssaunier
+</a>          </p>
         </li>
-      <% end %>
+        <li>
+          <img src="https://kitt.lewagon.com/placeholder/users/papillard" class="img-circle" alt="Papillard" />
+          <h2>Boris Paillard</h2>
+          <p>
+<a href="http://github.com/papillard">              <i class="fa fa-github"></i> papillard
+</a>          </p>
+        </li>
     </ul>
   </div>
 </div>
+
